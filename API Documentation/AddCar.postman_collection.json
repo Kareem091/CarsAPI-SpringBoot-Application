@@ -1,0 +1,63 @@
+{
+	"info": {
+		"_postman_id": "fdef9c4d-b4bc-4d7e-bc3d-7fab3a910bf3",
+		"name": "AddCar",
+		"description": "# Introduction\nREST API endpoint with Save functionality on cars.\n\n# Overview\nCreated by SpringBoot on Java 1.8 running on local PORT 8089.\n\n# Authentication\nBasic Athu == user/pass = evolvice/evolvice\n\n# Error Codes\nSuccess (200 OK), Internal Server Error (500),unathorized (404)
+\n\n# Rate limit\nNo.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/api/addCar",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/addCar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"addCar"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/addCar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"addCar"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "eb36d63b-c377-4c10-8ca0-d676f1663480",
+		"name": "UpdateCar",
+		"description": "# Introduction\nREST API endpoint with Update functionality on cars\n\n# Overview\nCreated by SpringBoot on Java 1.8 running on local PORT 8089.\n\n# Authentication\nBasic Athu == user/pass = evolvice/evolvice\n\n# Error Codes\nSuccess (200 OK), Internal Server Error (500),unathorized (404)
+\n\n# Rate limit\nINo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/api/updateCarId/5bdd60545afc1b2b5890da9f",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/updateCarId/5bdd60545afc1b2b5890da9f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"updateCarId",
+						"5bdd60545afc1b2b5890da9f"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/updateCarId/5bdd60545afc1b2b5890da9f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"updateCarId",
+								"5bdd60545afc1b2b5890da9f"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

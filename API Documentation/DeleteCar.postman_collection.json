@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "66189b7c-bdfa-4136-82ba-7e8a6957d1bd",
+		"name": "DeleteCar",
+		"description": "# Introduction\nREST API endpoint with Delete functionality on cars\n\n# Overview\nCreated by SpringBoot on Java 1.8 running on local PORT 8089.\n\n# Authentication\nBasic Athu == user/pass = evolvice/evolvice\n\n# Error Codes\nSuccess (200 OK), Internal Server Error (500),unathorized (404)
+\n\n# Rate limit\nINo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/api/removeCar/5bdd6eb45afc1b2448a0e9d6",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/removeCar/5bdd6eb45afc1b2448a0e9d6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"removeCar",
+						"5bdd6eb45afc1b2448a0e9d6"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/removeCar/5bdd6eb45afc1b2448a0e9d6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"removeCar",
+								"5bdd6eb45afc1b2448a0e9d6"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		}
+	]
+}

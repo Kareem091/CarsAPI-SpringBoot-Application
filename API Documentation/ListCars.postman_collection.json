@@ -1,0 +1,64 @@
+{
+	"info": {
+		"_postman_id": "ec5bd8a1-7962-4a61-81ea-6d35a160991e",
+		"name": "ListCars",
+		"description": "# Introduction\nREST API endpoint with List functionality on cars.\n\n# Overview\nCreated by SpringBoot on Java 1.8 running on local PORT 8089.\n \n# Authentication\nBasic Athu == user/pass = evolvice/evolvice.\n\n# Error Codes\nSuccess (200 OK), Internal Server Error (500),unathorized (404)
+.\n\n# Rate limit\nNo.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8089/api/listCars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8089/api/listCars",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8089",
+					"path": [
+						"api",
+						"listCars"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:8089/api/listCars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8089",
+							"path": [
+								"api",
+								"listCars"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": ""
+				}
+			]
+		}
+	]
+}
