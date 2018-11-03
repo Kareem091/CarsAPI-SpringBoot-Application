@@ -33,7 +33,7 @@ price:"00000"
 
 ### Run the App!
 
-1-mvn package spring-boot:run
+1-mvn spring-boot:run
 
 2-main method exist in App class
 
