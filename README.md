@@ -31,6 +31,7 @@ price:"00000"
 
 [Mlab mongodb](https://mlab.com/)
 
+Java 1.8
 
 ### Run the App!
 
