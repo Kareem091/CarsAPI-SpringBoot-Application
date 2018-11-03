@@ -1,4 +1,5 @@
 ### A Spring Boot Application Assinment with Spring Data Rest and MongoDB
+REST API endpoint with CRUD functionality on cars system.
 
 ### MongoDB Config.
 
@@ -38,6 +39,8 @@ price:"00000"
 2-main method exist in App class
 
 ### Urls
+
+REST API is using basic authentication api to secure api calls:..
 
 user/password: evolvice/evolvice
 
