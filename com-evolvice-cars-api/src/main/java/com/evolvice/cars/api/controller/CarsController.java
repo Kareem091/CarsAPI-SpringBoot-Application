@@ -150,5 +150,20 @@ public class CarsController {
 		return new ResponseEntity<CustomResponse>(new CustomResponse("Car Removed Successfully ", "200", car), HttpStatus.OK);
 
 	}
+	/*
+	 * below request used to remove car from the system by id
+	 * REST URL: http://localhost:8089/api/removeCar/{carID}
+	 * URL Params : Required: carID=[String]
+	 * Method: DELETE
+	 * Response Codes: Success (200 OK), Internal Server Error (500)
+	 */
+	@DeleteMapping("/removeCarV3/{carId}")
+	private ResponseEntity<CustomResponse> removeCarV3(@PathVariable("carId") String carId) {
+		LOGGER.info("Entering removeCar: " + carId);
+		Cars car = carsRepo.findById(carId).orElseThrow(() -> new IllegalArgumentException("Invalid Car Id: " + carId));
+		carsRepo.delete(car);
+		return new ResponseEntity<CustomResponse>(new CustomResponse("Car Removed Successfully ", "200", car), HttpStatus.OK);
+
+	}
 
 }
