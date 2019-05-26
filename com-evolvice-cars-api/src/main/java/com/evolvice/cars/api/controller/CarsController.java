@@ -95,6 +95,28 @@ public class CarsController {
 
 
 	}
+	
+	/*
+	 * below request used to Update car exist in the system by id
+	 * REST URL: http://localhost:8089/api/updateCarId/{carID}
+	 * URL Params : Required: carID=[String]
+	 * Method: POST
+	 * Response Codes: Success (200 OK), Internal Server Error (500)
+	 */
+	@PostMapping("/updateCarIdV2/{carId}")
+	private ResponseEntity<CustomResponse> updateCarV2(@PathVariable("carId") String carId, @RequestBody Cars carRequest) {
+		LOGGER.info("Entering updateCar: ID: " + carId + " RequestBody :: " + carRequest);
+		Cars car = carsRepo.findById(carId).orElseThrow(() -> new IllegalArgumentException("Invalid Car Id:" + carId));
+		car.setCarBrand(carRequest.getCarBrand());
+		car.setCarModel(carRequest.getCarModel());
+		car.setCarModelDetails(carRequest.getCarModelDetails());
+		car.setCarPrice(carRequest.getCarPrice());
+		car.setCarProductionYear(carRequest.getCarProductionYear());
+		carsRepo.save(car);
+		return new ResponseEntity<CustomResponse>(new CustomResponse("Car Updated Successfully ", "200", car), HttpStatus.OK);
+
+
+	}
 
 	
 	/*
